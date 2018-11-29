@@ -8,7 +8,7 @@
   
   <!-- body font -->
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
   <style type="text/css">
   
@@ -80,7 +80,6 @@
 		<a href="./proxy/https://www.google.com/" target="_blank">Google搜索</a>
 		<a href="./proxy/https://zh.wikipedia.org/wiki/喬高-麥塔斯調查報告" target="_blank">维基百科</a>
 		<a href="https://github.com/gfw-breaker" target="_blank">GitHub</a>
-		<a href="./proxy/http://truth.atspace.eu/fgate" target="_blank">翻墙软件</a>
 	  </div>
     </div>
 	<br/>
@@ -89,15 +88,6 @@
 		function $(id){
 			return document.getElementById(id);
 		}
-		
-		// $('unblocker-form').onsubmit = function(){
-		//	var url = $('url').value;
-		//	if(url.substr(0,4) != "http"){
-		//		url = "http://" + url;
-		//	}
-		//	window.location.pathname = 'proxy/' + url;
-		//	return false;
-		//};
 		
 		function checkError(){
 			var search = window.location.search;
@@ -112,10 +102,10 @@
 				$error.style.display = "block";
 			}
 		}
-    
-		window.onload = function() { 
+
+		window.onload = function() {
 			$('url').focus(); 
-			checkError(); 
+			checkError();
 		}
 	</script>
 </body>
